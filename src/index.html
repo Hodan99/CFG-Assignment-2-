@@ -1,0 +1,45 @@
+<html lang="en">
+    
+<body>
+  <div class="container">
+    <h1>Personal Workout Planner💪</h1>
+    <form id="workout-form">
+      <label for="cardio">Cardio Exercises:</label>
+      <select id="cardio" multiple>
+        <option value="10">Running (10 mins)</option>
+        <option value="15">Cycling (15 mins)</option>
+        <option value="20">Swimming (20 mins)</option>
+      </select>
+
+      <label for="strength">Strength Exercises:</label>
+      <select id="strength" multiple>
+        <option value="15">Push-ups (15 mins)</option>
+        <option value="20">Squats (20 mins)</option>
+        <option value="25">Deadlifts (25 mins)</option>
+      </select>
+
+      <label for="flexibility">Flexibility Exercises:</label>
+      <select id="flexibility" multiple>
+        <option value="10">Yoga (10 mins)</option>
+        <option value="15">Stretching (15 mins)</option>
+        <option value="20">Pilates (20 mins)</option>
+      </select>
+
+      <label>
+        <input type="checkbox" id="warmup" value="5"> Add Warm-up (5 mins)
+      </label>
+      <label>
+        <input type="checkbox" id="cooldown" value="5"> Add Cool-down (5 mins)
+      </label>
+
+      <button type="button" id="create-plan-button"onclick="calculateWorkout()">Create Workout Plan</button>
+    </form>
+
+    <div id="summary">
+      <h2>Your Workout Plan</h2>
+      <p id="total-duration">Total Duration: 0 mins</p>
+      <ul id="exercise-list"></ul>
+    </div>
+  </div>
+
+</body>
